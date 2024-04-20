@@ -4,7 +4,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 22,
     "widgetName": "Moderation_Modal_Ban",
-    "onClick": "{{banUser.run().then(() => {\n  showAlert('User Banned', 'success');\n  closeModal('Moderation_Modal');\n  listUsers.run();\n}).catch(() => {\n  showAlert('', '');\n});}}",
+    "onClick": "{{banUser.run().then(() => {\n  showAlert('User Banned', 'success');\n  closeModal('Moderation_Modal');\n  listUsers.run();\n}).catch(() => {});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "dynamicPropertyPathList": [{"key": "isDisabled"}],
     "displayName": "Button",

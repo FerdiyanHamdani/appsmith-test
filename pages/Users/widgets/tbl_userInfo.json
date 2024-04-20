@@ -357,7 +357,7 @@
         },
         "customColumn1": {
             "computedValue": "",
-            "onClick": "{{showModal('Modal1');}}",
+            "onClick": "{{showModal('Permission_Modal');}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "Permissions",
