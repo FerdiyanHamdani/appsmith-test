@@ -98,7 +98,7 @@
     "columnWidthMap": {
         "image": 85,
         "gender": 115,
-        "phoneVerifiedAt": 164,
+        "phoneVerifiedAt": 116,
         "name": 161,
         "active": 98,
         "employee_salary": 241,
@@ -357,7 +357,7 @@
         },
         "customColumn1": {
             "computedValue": "",
-            "onClick": "{{showModal('Permission_Modal');}}",
+            "onClick": "{{getUserPermissions.run().then(() => {\n  showModal('Permission_Modal');\n}).catch(() => {\n  showAlert('Failed to Fetch permissions', 'error');\n});}}",
             "isEditable": false,
             "notation": "standard",
             "alias": "Permissions",
