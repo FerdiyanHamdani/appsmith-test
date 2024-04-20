@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Customer Information",
-    "slug": "customer-information",
+    "name": "Users",
+    "slug": "users",
     "layouts": [
       {
         "viewMode": false,
@@ -28,11 +28,24 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Customer Information_getEmployees",
-              "name": "getEmployees",
+              "id": "Users_listUsers",
+              "name": "listUsers",
               "confirmBeforeExecute": false,
               "pluginType": "API",
               "jsonPathKeys": [
+                "appsmith.store.token"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ],
+          [
+            {
+              "id": "Users_getUserPermissions",
+              "name": "getUserPermissions",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [
+                "tbl_userInfo.selectedRow.id",
                 "appsmith.store.token"
               ],
               "timeoutInMillisecond": 10000
@@ -41,7 +54,7 @@
         ],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Customer Information",
+        "id": "Users",
         "deleted": false,
         "policies": [],
         "userPermissions": []

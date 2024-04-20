@@ -1,4 +1,4 @@
 {
-	username: "{{Username.text}}",
+	username: "{{Email.text}}",
 	password: "{{Password.text}}"
 }

@@ -1,0 +1,3 @@
+{
+	reason: {{Moderation_Modal_Reason.text}}
+}

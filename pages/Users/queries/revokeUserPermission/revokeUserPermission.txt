@@ -1,0 +1,4 @@
+{
+	bucket: {{PermissionTable.triggeredRow.bucket}},
+  name: {{PermissionTable.triggeredRow.name}}
+}
