@@ -4,7 +4,7 @@
     "boxShadow": "none",
     "mobileBottomRow": 37,
     "widgetName": "Button1",
-    "onClick": "{{Login_dummy.run({}).then(() => {\n  login_helper.handleLogin(Login_dummy.data);\n}).catch(() => {\n  showAlert('Wrong username or password', '');\n});}}",
+    "onClick": "{{Login_Endpoint.run().then(() => {\n  login_helper.handleLogin(Login_Endpoint.data);\n}).catch(() => {\n  showAlert('Wrong username or password', '');\n});}}",
     "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
     "displayName": "Button",
     "iconSVG": "https://appcdn.appsmith.com/static/media/icon.05d209fafeb13a8569e3b4e97069d9ee.svg",

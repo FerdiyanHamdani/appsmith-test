@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Customer Information",
+    "pageId": "Users",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -41,7 +41,7 @@
         "apiContentType": "none"
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
         "key": "headers[0].value"
@@ -59,7 +59,7 @@
     "userPermissions": [],
     "createdAt": "2024-02-16T12:00:27Z"
   },
-  "id": "Customer Information_getEmployees",
+  "id": "Users_getEmployees",
   "deleted": false,
   "gitSyncId": "65cf4d9c14f654396c25157c_65cf4e5b439de4515aa54540"
 }
