@@ -1,4 +1,12 @@
 {
+  "appIsExample": false,
+  "appLayout": {
+    "type": "FLUID"
+  },
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "color": "#FFEFDB",
+  "evaluationVersion": 2,
   "pages": [
     {
       "id": "Users",
@@ -9,21 +17,7 @@
       "isDefault": true
     }
   ],
-  "viewMode": false,
-  "appIsExample": false,
-  "unreadCommentThreads": 0,
-  "color": "#FFEFDB",
   "unpublishedAppLayout": {
     "type": "FLUID"
-  },
-  "publishedAppLayout": {
-    "type": "FLUID"
-  },
-  "unpublishedCustomJSLibs": [],
-  "publishedCustomJSLibs": [],
-  "evaluationVersion": 2,
-  "applicationVersion": 2,
-  "collapseInvisibleWidgets": true,
-  "isManualUpdate": false,
-  "deleted": false
+  }
 }
