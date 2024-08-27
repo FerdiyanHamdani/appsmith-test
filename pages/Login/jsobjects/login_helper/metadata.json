@@ -1,15 +1,11 @@
 {
+  "gitSyncId": "65cf4d9c14f654396c25157c_65fe8d7cc7fef247f42d550a",
+  "id": "Login_login_helper",
   "unpublishedCollection": {
     "name": "login_helper",
     "pageId": "Login",
     "pluginId": "js-plugin",
     "pluginType": "JS",
-    "actions": [],
-    "archivedActions": [],
-    "variables": [],
-    "userPermissions": []
-  },
-  "id": "Login_login_helper",
-  "deleted": false,
-  "gitSyncId": "65cf4d9c14f654396c25157c_65fe8d7cc7fef247f42d550a"
+    "variables": []
+  }
 }
