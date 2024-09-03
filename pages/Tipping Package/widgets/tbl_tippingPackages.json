@@ -121,6 +121,9 @@
     },
     {
       "key": "primaryColumns.updatedAt.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn2.isDisabled"
     }
   ],
   "dynamicPropertyPathList": [
@@ -132,6 +135,9 @@
     },
     {
       "key": "primaryColumns.EditActions1.isDiscardDisabled"
+    },
+    {
+      "key": "primaryColumns.customColumn2.isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -168,7 +174,7 @@
   "mobileRightColumn": 35,
   "mobileTopRow": 17,
   "needsHeightForContent": true,
-  "onAddNewRowSave": "{{createTippingPackages.run().then(() => {\n  createTippingPackages.run().then(() => {\n    showAlert('Tipping Package Created!');\n  });\n});}}",
+  "onAddNewRowSave": "{{createTippingPackages.run().then(() => {\n  listTippingPackages.run().then(() => {\n    showAlert('Package Created!');\n  });\n});}}",
   "originalBottomRow": 59,
   "originalTopRow": 17,
   "parentColumnSpace": 18.880859375,
@@ -309,7 +315,7 @@
       "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": true,
-      "isDisabled": false,
+      "isDisabled": "{{tbl_tippingPackages.processedTableData.map((currentRow, currentIndex) => ( tbl_tippingPackages.selectedRowIndex!=currentIndex))}}",
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
