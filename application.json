@@ -15,6 +15,10 @@
     {
       "id": "Login",
       "isDefault": true
+    },
+    {
+      "id": "Tipping Package",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
