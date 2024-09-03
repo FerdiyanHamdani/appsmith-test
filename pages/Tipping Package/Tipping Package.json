@@ -1,23 +1,23 @@
 {
-  "gitSyncId": "65cf4d9c14f654396c25157c_65fe8bb20f78b86aa2b4a128",
+  "gitSyncId": "6623c49634ed1c2c6d4c255c_24ba7acb-e408-435a-8fea-6fadbd9920db",
   "unpublishedPage": {
-    "isHidden": true,
+    "isHidden": false,
     "layouts": [
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 470,
+          "bottomRow": 630,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
           "dynamicBindingPathList": [],
           "leftColumn": 0,
-          "minHeight": 880,
+          "minHeight": 1300,
           "parentColumnSpace": 1,
           "parentRowSpace": 1,
           "rightColumn": 1224,
           "snapColumns": 64,
-          "snapRows": 86,
+          "snapRows": 128,
           "topRow": 0,
           "type": "CANVAS_WIDGET",
           "version": 90,
@@ -26,7 +26,7 @@
         }
       }
     ],
-    "name": "Login",
-    "slug": "login"
+    "name": "Tipping Package",
+    "slug": "tipping-package"
   }
 }
