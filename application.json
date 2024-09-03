@@ -23,7 +23,13 @@
   "applicationVersion": 2,
   "collapseInvisibleWidgets": true,
   "color": "#FFEFDB",
+  "embedSetting": {
+    "height": "720px",
+    "showNavigationBar": false,
+    "width": "1024px"
+  },
   "evaluationVersion": 2,
+  "icon": "camera",
   "pages": [
     {
       "id": "Users",
