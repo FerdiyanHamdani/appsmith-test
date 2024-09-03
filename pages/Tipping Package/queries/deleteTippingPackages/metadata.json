@@ -23,7 +23,7 @@
           "value": "Bearer {{appsmith.store.token}}"
         }
       ],
-      "httpMethod": "POST",
+      "httpMethod": "DELETE",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
       "path": "/admin/tipping-packages/{{tbl_tippingPackages.selectedRow.id}}",
