@@ -32,15 +32,19 @@
   "icon": "camera",
   "pages": [
     {
-      "id": "Users",
-      "isDefault": false
-    },
-    {
       "id": "Login",
       "isDefault": true
     },
     {
+      "id": "Tipping",
+      "isDefault": false
+    },
+    {
       "id": "Tipping Package",
+      "isDefault": false
+    },
+    {
+      "id": "Users",
       "isDefault": false
     }
   ],
