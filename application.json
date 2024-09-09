@@ -46,6 +46,14 @@
     {
       "id": "Users",
       "isDefault": false
+    },
+    {
+      "id": "Transaction",
+      "isDefault": false
+    },
+    {
+      "id": "Deposit",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
