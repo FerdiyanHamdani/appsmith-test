@@ -25,7 +25,7 @@
   "color": "#FFEFDB",
   "embedSetting": {
     "height": "720px",
-    "showNavigationBar": false,
+    "showNavigationBar": true,
     "width": "1024px"
   },
   "evaluationVersion": 2,
@@ -36,6 +36,10 @@
       "isDefault": true
     },
     {
+      "id": "Deposit",
+      "isDefault": false
+    },
+    {
       "id": "Tipping",
       "isDefault": false
     },
@@ -44,15 +48,11 @@
       "isDefault": false
     },
     {
-      "id": "Users",
-      "isDefault": false
-    },
-    {
       "id": "Transaction",
       "isDefault": false
     },
     {
-      "id": "Deposit",
+      "id": "Users",
       "isDefault": false
     },
     {
