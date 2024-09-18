@@ -54,6 +54,10 @@
     {
       "id": "Deposit",
       "isDefault": false
+    },
+    {
+      "id": "Withdraw",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

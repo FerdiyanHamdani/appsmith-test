@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6623c49634ed1c2c6d4c255c_da08cec2-76b1-453c-8b10-60c970f1d9d1",
+  "id": "Withdraw_clearUploadedFile",
+  "unpublishedCollection": {
+    "name": "clearUploadedFile",
+    "pageId": "Withdraw",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

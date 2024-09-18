@@ -1,0 +1,4 @@
+{
+  "bucket": "live",
+  "name": "stream"
+}
