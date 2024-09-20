@@ -107,6 +107,9 @@
     },
     {
       "key": "primaryColumns.EditActions1.isDiscardDisabled"
+    },
+    {
+      "key": "totalRecordsCount"
     }
   ],
   "dynamicPropertyPathList": [
@@ -129,6 +132,9 @@
     },
     {
       "key": "primaryColumns.customColumn1.onClick"
+    },
+    {
+      "key": "onPageChange"
     }
   ],
   "enableClientSideSearch": true,
@@ -156,6 +162,7 @@
   "needsErrorInfo": false,
   "needsHeightForContent": true,
   "onAddNewRowSave": "{{grantUserPermission.run().then(() => {\n  getUserPermissions.run().then(() => {\n    showAlert('Permission Granted!');\n  });\n});}}",
+  "onPageChange": "{{getUserPermissions.run()}}",
   "parentColumnSpace": 6.9375,
   "parentId": "5qkm23mk3a",
   "parentRowSpace": 10,
@@ -461,6 +468,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 64,
   "searchKey": "",
+  "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{getUserPermissions.data}}",
   "tags": [
@@ -470,7 +478,7 @@
   "textSize": "0.875rem",
   "thumbnailSVG": "https://appcdn.appsmith.com/static/media/thumbnail.d0492f06681daa69baf92b07d3829dfc.svg",
   "topRow": 6,
-  "totalRecordsCount": 0,
+  "totalRecordsCount": "{{getUserPermissions.data.totalCount||0}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",

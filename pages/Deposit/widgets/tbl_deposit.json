@@ -146,6 +146,9 @@
     },
     {
       "key": "primaryColumns.capturedAt.computedValue"
+    },
+    {
+      "key": "totalRecordsCount"
     }
   ],
   "dynamicPropertyPathList": [
@@ -165,6 +168,9 @@
     },
     {
       "key": "primaryColumns.EditActions1.onSave"
+    },
+    {
+      "key": "onPageChange"
     }
   ],
   "enableClientSideSearch": true,
@@ -191,6 +197,7 @@
   "mobileTopRow": 17,
   "needsHeightForContent": true,
   "onAddNewRowSave": "",
+  "onPageChange": "{{listDeposit.run()}}",
   "originalBottomRow": 59,
   "originalTopRow": 17,
   "parentColumnSpace": 18.880859375,
@@ -713,6 +720,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 56,
   "searchKey": "",
+  "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{listDeposit.data.items}}",
   "tags": [
@@ -721,7 +729,7 @@
   ],
   "textSize": "0.875rem",
   "topRow": 5,
-  "totalRecordsCount": 0,
+  "totalRecordsCount": "{{listDeposit.data.totalCount}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",

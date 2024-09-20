@@ -121,6 +121,9 @@
     },
     {
       "key": "primaryColumns.photoId.computedValue"
+    },
+    {
+      "key": "totalRecordsCount"
     }
   ],
   "dynamicPropertyPathList": [
@@ -140,6 +143,9 @@
     },
     {
       "key": "primaryColumns.customColumn2.onClick"
+    },
+    {
+      "key": "onPageChange"
     }
   ],
   "enableClientSideSearch": true,
@@ -165,6 +171,7 @@
   "mobileRightColumn": 35,
   "mobileTopRow": 17,
   "needsHeightForContent": true,
+  "onPageChange": "{{listUsers.run()}}",
   "originalBottomRow": 63,
   "originalTopRow": 5,
   "parentColumnSpace": 18.880859375,
@@ -586,7 +593,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 53,
   "searchKey": "",
-  "serverSidePaginationEnabled": false,
+  "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
   "tableData": "{{listUsers.data.items}}",
   "tags": [
@@ -595,7 +602,7 @@
   ],
   "textSize": "0.875rem",
   "topRow": 5,
-  "totalRecordsCount": 0,
+  "totalRecordsCount": "{{listUsers.data.totalCount}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
