@@ -26,13 +26,18 @@
       "httpMethod": "GET",
       "httpVersion": "HTTP11",
       "paginationType": "NONE",
-      "path": "/admin/deposits/",
+      "path": "/admin/deposits",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "page",
+          "value": "{{tbl_deposit.pageNo}}"
+        }
+      ],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -45,6 +50,12 @@
     "dynamicBindingPathList": [
       {
         "key": "headers[0].value"
+      },
+      {
+        "key": "path"
+      },
+      {
+        "key": "queryParameters[0].value"
       }
     ],
     "executeOnLoad": true,
