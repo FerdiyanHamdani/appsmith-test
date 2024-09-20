@@ -27,7 +27,12 @@
           "value": true
         }
       ],
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "page",
+          "value": "{{PermissionTable.pageNo}}"
+        }
+      ],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -43,6 +48,9 @@
       },
       {
         "key": "headers[0].value"
+      },
+      {
+        "key": "queryParameters[0].value"
       }
     ],
     "executeOnLoad": true,

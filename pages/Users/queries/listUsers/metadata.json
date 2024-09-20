@@ -32,7 +32,12 @@
           "value": true
         }
       ],
-      "queryParameters": [],
+      "queryParameters": [
+        {
+          "key": "page",
+          "value": "{{tbl_userInfo.pageNo}}"
+        }
+      ],
       "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
@@ -45,6 +50,12 @@
     "dynamicBindingPathList": [
       {
         "key": "headers[0].value"
+      },
+      {
+        "key": "path"
+      },
+      {
+        "key": "queryParameters[0].value"
       }
     ],
     "executeOnLoad": true,

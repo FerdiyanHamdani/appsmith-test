@@ -667,7 +667,7 @@
   ],
   "textSize": "0.875rem",
   "topRow": 5,
-  "totalRecordsCount": "{{listWithdraw.data.totalPages * 10}}",
+  "totalRecordsCount": "{{listWithdraw.data.totalCount}}",
   "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER",
