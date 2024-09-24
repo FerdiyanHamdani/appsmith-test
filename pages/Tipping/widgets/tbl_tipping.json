@@ -34,18 +34,18 @@
   "columnOrder": [
     "id",
     "userId",
+    "userEmail",
     "targetUserId",
+    "targetUserEmail",
     "amount",
     "transactionId",
     "targetTransactionId",
     "walletId",
     "targetWalletId",
     "createdAt",
-    "EditActions1",
-    "userEmail",
-    "targetUserEmail"
+    "EditActions1"
   ],
-  "columnUpdatedAt": 1727190250428,
+  "columnUpdatedAt": 1727192447684,
   "columnWidthMap": {
     "active": 98,
     "amount": 109,
