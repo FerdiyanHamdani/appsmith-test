@@ -34,6 +34,10 @@
       ],
       "queryParameters": [
         {
+          "key": "search",
+          "value": "{{tbl_withdraws.searchText}}"
+        },
+        {
           "key": "page",
           "value": "{{tbl_withdraws.pageNo}}"
         }
@@ -56,6 +60,9 @@
       },
       {
         "key": "queryParameters[0].value"
+      },
+      {
+        "key": "queryParameters[1].value"
       }
     ],
     "executeOnLoad": true,

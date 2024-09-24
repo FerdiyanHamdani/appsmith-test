@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6623c49634ed1c2c6d4c255c_d6db5bb8-3317-455f-ae1f-d1df9908c262",
+  "id": "Transaction_moneyDot",
+  "unpublishedCollection": {
+    "name": "moneyDot",
+    "pageId": "Transaction",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}

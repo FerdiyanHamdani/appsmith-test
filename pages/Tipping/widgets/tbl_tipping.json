@@ -41,9 +41,11 @@
     "walletId",
     "targetWalletId",
     "createdAt",
-    "EditActions1"
+    "EditActions1",
+    "userEmail",
+    "targetUserEmail"
   ],
-  "columnUpdatedAt": 1725463777440,
+  "columnUpdatedAt": 1727190250428,
   "columnWidthMap": {
     "active": 98,
     "amount": 109,
@@ -125,6 +127,12 @@
     },
     {
       "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.userEmail.computedValue"
+    },
+    {
+      "key": "primaryColumns.targetUserEmail.computedValue"
     }
   ],
   "dynamicPropertyPathList": [
@@ -147,9 +155,12 @@
     },
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
-  "enableClientSideSearch": true,
+  "enableClientSideSearch": false,
   "enableServerSideFiltering": false,
   "hideCard": false,
   "horizontalAlignment": "LEFT",
@@ -174,6 +185,7 @@
   "needsHeightForContent": true,
   "onAddNewRowSave": "",
   "onPageChange": "{{listTippings.run()}}",
+  "onSearchTextChanged": "{{listTippings.run()}}",
   "originalBottomRow": 59,
   "originalTopRow": 17,
   "parentColumnSpace": 18.880859375,
@@ -228,7 +240,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{tbl_tipping.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount\"]))}}",
+      "computedValue": "{{tbl_tipping.processedTableData.map((currentRow, currentIndex) => ( moneyDot.moneyDot(currentRow[\"amount\"])))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -350,6 +362,40 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "targetUserEmail": {
+      "alias": "targetUserEmail",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{tbl_tipping.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"targetUserEmail\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "targetUserEmail",
+      "index": 10,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "targetUserEmail",
+      "notation": "standard",
+      "originalId": "targetUserEmail",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "targetUserId": {
       "alias": "targetUserId",
       "allowCellWrapping": false,
@@ -437,6 +483,40 @@
       "notation": "standard",
       "originalId": "transactionId",
       "sticky": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "userEmail": {
+      "alias": "userEmail",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{tbl_tipping.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"userEmail\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "userEmail",
+      "index": 9,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "userEmail",
+      "notation": "standard",
+      "originalId": "userEmail",
+      "sticky": "",
+      "textColor": "",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},

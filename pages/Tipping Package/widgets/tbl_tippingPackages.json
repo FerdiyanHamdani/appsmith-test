@@ -155,9 +155,12 @@
     },
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
-  "enableClientSideSearch": true,
+  "enableClientSideSearch": false,
   "enableServerSideFiltering": false,
   "hideCard": false,
   "horizontalAlignment": "LEFT",
@@ -182,6 +185,7 @@
   "needsHeightForContent": true,
   "onAddNewRowSave": "{{createTippingPackages.run().then(() => {\n  listTippingPackages.run().then(() => {\n    showAlert('Package Created!');\n  });\n});}}",
   "onPageChange": "{{listTippingPackages.run()}}",
+  "onSearchTextChanged": "{{listTippingPackages.run()}}",
   "originalBottomRow": 59,
   "originalTopRow": 17,
   "parentColumnSpace": 18.880859375,
@@ -236,7 +240,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{tbl_tippingPackages.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount\"]))}}",
+      "computedValue": "{{tbl_tippingPackages.processedTableData.map((currentRow, currentIndex) => ( moneyDot.moneyDot(currentRow[\"amount\"])))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,

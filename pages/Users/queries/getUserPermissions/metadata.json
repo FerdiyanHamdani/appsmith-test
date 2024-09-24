@@ -29,6 +29,10 @@
       ],
       "queryParameters": [
         {
+          "key": "search",
+          "value": "{{PermissionTable.searchText}}"
+        },
+        {
           "key": "page",
           "value": "{{PermissionTable.pageNo}}"
         }
@@ -51,6 +55,9 @@
       },
       {
         "key": "queryParameters[0].value"
+      },
+      {
+        "key": "queryParameters[1].value"
       }
     ],
     "executeOnLoad": true,

@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "6623c49634ed1c2c6d4c255c_fe2e07d1-edfe-499f-a9cd-129792379d25",
+  "id": "Withdraw_moneyDot",
+  "unpublishedCollection": {
+    "name": "moneyDot",
+    "pageId": "Withdraw",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
