@@ -171,9 +171,12 @@
     },
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
-  "enableClientSideSearch": true,
+  "enableClientSideSearch": false,
   "enableServerSideFiltering": false,
   "hideCard": false,
   "horizontalAlignment": "LEFT",
@@ -198,6 +201,7 @@
   "needsHeightForContent": true,
   "onAddNewRowSave": "",
   "onPageChange": "{{listDeposit.run()}}",
+  "onSearchTextChanged": "{{listDeposit.run()}}",
   "originalBottomRow": 59,
   "originalTopRow": 17,
   "parentColumnSpace": 18.880859375,

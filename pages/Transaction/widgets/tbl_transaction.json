@@ -121,6 +121,9 @@
     },
     {
       "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.amount.textColor"
     }
   ],
   "dynamicPropertyPathList": [
@@ -132,6 +135,9 @@
     },
     {
       "key": "primaryColumns.EditActions1.isDiscardDisabled"
+    },
+    {
+      "key": "primaryColumns.amount.textColor"
     }
   ],
   "dynamicTriggerPathList": [
@@ -143,9 +149,12 @@
     },
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
-  "enableClientSideSearch": true,
+  "enableClientSideSearch": false,
   "enableServerSideFiltering": false,
   "hideCard": false,
   "horizontalAlignment": "LEFT",
@@ -170,6 +179,7 @@
   "needsHeightForContent": true,
   "onAddNewRowSave": "",
   "onPageChange": "{{listTransaction.run()}}",
+  "onSearchTextChanged": "{{listTransaction.run()}}",
   "originalBottomRow": 59,
   "originalTopRow": 17,
   "parentColumnSpace": 18.880859375,
@@ -224,7 +234,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "number",
-      "computedValue": "{{tbl_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount\"]))}}",
+      "computedValue": "{{tbl_transaction.processedTableData.map((currentRow, currentIndex) => ( moneyDot.moneyDot(currentRow[\"amount\"])))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,
@@ -245,7 +255,7 @@
       "notation": "standard",
       "originalId": "amount",
       "sticky": "",
-      "textColor": "",
+      "textColor": "{{tbl_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount\"]>=0?'green':'red'))}}",
       "textSize": "0.875rem",
       "thousandSeparator": true,
       "validation": {},
@@ -320,7 +330,7 @@
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "columnType": "text",
-      "computedValue": "{{tbl_transaction.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"lastBalance\"]))}}",
+      "computedValue": "{{tbl_transaction.processedTableData.map((currentRow, currentIndex) => ( moneyDot.moneyDot(currentRow[\"lastBalance\"])))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,

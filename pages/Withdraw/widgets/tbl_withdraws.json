@@ -170,9 +170,12 @@
     },
     {
       "key": "primaryColumns.customColumn3.onClick"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
-  "enableClientSideSearch": true,
+  "enableClientSideSearch": false,
   "enableServerSideFiltering": false,
   "hideCard": false,
   "horizontalAlignment": "LEFT",
@@ -196,6 +199,7 @@
   "mobileTopRow": 17,
   "needsHeightForContent": true,
   "onPageChange": "{{listWithdraw.run()}}",
+  "onSearchTextChanged": "{{listWithdraw.run()}}",
   "originalBottomRow": 63,
   "originalTopRow": 5,
   "parentColumnSpace": 18.880859375,
@@ -209,7 +213,7 @@
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
       "columnType": "text",
-      "computedValue": "{{tbl_withdraws.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"amount\"]))}}",
+      "computedValue": "{{tbl_withdraws.processedTableData.map((currentRow, currentIndex) => ( moneyDot.moneyDot(currentRow[\"amount\"])))}}",
       "currencyCode": "USD",
       "decimals": 0,
       "enableFilter": true,

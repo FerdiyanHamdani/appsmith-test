@@ -146,9 +146,12 @@
     },
     {
       "key": "onPageChange"
+    },
+    {
+      "key": "onSearchTextChanged"
     }
   ],
-  "enableClientSideSearch": true,
+  "enableClientSideSearch": false,
   "enableServerSideFiltering": false,
   "hideCard": false,
   "horizontalAlignment": "LEFT",
@@ -172,6 +175,7 @@
   "mobileTopRow": 17,
   "needsHeightForContent": true,
   "onPageChange": "{{listUsers.run()}}",
+  "onSearchTextChanged": "{{listUsers.run()}}",
   "originalBottomRow": 63,
   "originalTopRow": 5,
   "parentColumnSpace": 18.880859375,
