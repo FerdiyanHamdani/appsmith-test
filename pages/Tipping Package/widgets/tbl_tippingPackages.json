@@ -33,22 +33,26 @@
   },
   "columnOrder": [
     "id",
-    "packageImg",
     "packageName",
     "amount",
     "isActive",
+    "imageUrl",
     "createdAt",
     "updatedAt",
+    "imageId",
+    "deletedAt",
+    "customColumn3",
     "customColumn2",
     "EditActions1"
   ],
-  "columnUpdatedAt": 1725379397992,
+  "columnUpdatedAt": 1727967000283,
   "columnWidthMap": {
     "active": 98,
     "amount": 160,
     "createdAt": 180,
     "customColumn1": 84,
     "customColumn2": 100,
+    "customColumn3": 100,
     "email": 186,
     "employee_age": 340.125,
     "employee_salary": 241,
@@ -85,9 +89,6 @@
     },
     {
       "key": "tableData"
-    },
-    {
-      "key": "primaryColumns.packageImg.computedValue"
     },
     {
       "key": "primaryColumns.packageName.computedValue"
@@ -127,6 +128,27 @@
     },
     {
       "key": "totalRecordsCount"
+    },
+    {
+      "key": "primaryColumns.imageId.computedValue"
+    },
+    {
+      "key": "primaryColumns.deletedAt.computedValue"
+    },
+    {
+      "key": "primaryColumns.imageUrl.computedValue"
+    },
+    {
+      "key": "primaryColumns.customColumn3.buttonColor"
+    },
+    {
+      "key": "primaryColumns.customColumn3.borderRadius"
+    },
+    {
+      "key": "primaryColumns.customColumn3.boxShadow"
+    },
+    {
+      "key": "primaryColumns.customColumn3.isDisabled"
     }
   ],
   "dynamicPropertyPathList": [
@@ -141,6 +163,9 @@
     },
     {
       "key": "primaryColumns.customColumn2.isDisabled"
+    },
+    {
+      "key": "primaryColumns.customColumn3.isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -158,6 +183,9 @@
     },
     {
       "key": "onSearchTextChanged"
+    },
+    {
+      "key": "primaryColumns.customColumn3.onClick"
     }
   ],
   "enableClientSideSearch": false,
@@ -186,8 +214,8 @@
   "onAddNewRowSave": "{{createTippingPackages.run().then(() => {\n  listTippingPackages.run().then(() => {\n    showAlert('Package Created!');\n  });\n});}}",
   "onPageChange": "{{listTippingPackages.run()}}",
   "onSearchTextChanged": "{{listTippingPackages.run()}}",
-  "originalBottomRow": 59,
-  "originalTopRow": 17,
+  "originalBottomRow": 53,
+  "originalTopRow": 5,
   "parentColumnSpace": 18.880859375,
   "parentId": "0",
   "parentRowSpace": 10,
@@ -343,6 +371,79 @@
       "verticalAlignment": "CENTER",
       "width": 150
     },
+    "customColumn3": {
+      "alias": "Image",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "borderRadius": "{{tbl_tippingPackages.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
+      "boxShadow": "{{tbl_tippingPackages.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
+      "buttonColor": "{{tbl_tippingPackages.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
+      "buttonLabel": "Upload",
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "button",
+      "computedValue": "",
+      "currencyCode": "USD",
+      "customAlias": "",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "horizontalAlignment": "LEFT",
+      "id": "customColumn3",
+      "index": 9,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": true,
+      "isDisabled": "{{tbl_tippingPackages.processedTableData.map((currentRow, currentIndex) => ( tbl_tippingPackages.selectedRowIndex!=currentIndex))}}",
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "Image",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "onClick": "{{showModal(tpImage_Modal.name);}}",
+      "originalId": "customColumn3",
+      "sticky": "right",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "deletedAt": {
+      "alias": "deletedAt",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "text",
+      "computedValue": "{{tbl_tippingPackages.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"deletedAt\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "deletedAt",
+      "index": 6,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "deletedAt",
+      "notation": "standard",
+      "originalId": "deletedAt",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
     "id": {
       "alias": "id",
       "allowCellWrapping": false,
@@ -366,6 +467,74 @@
       "originalId": "id",
       "sticky": "",
       "textSize": "0.875rem",
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "imageId": {
+      "alias": "imageId",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "number",
+      "computedValue": "{{tbl_tippingPackages.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"imageId\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "imageId",
+      "index": 1,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "imageId",
+      "notation": "standard",
+      "originalId": "imageId",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
+      "verticalAlignment": "CENTER",
+      "width": 150
+    },
+    "imageUrl": {
+      "alias": "imageUrl",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "cellBackground": "",
+      "columnType": "image",
+      "computedValue": "{{tbl_tippingPackages.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"imageUrl\"]))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
+      "enableFilter": true,
+      "enableSort": true,
+      "fontStyle": "",
+      "horizontalAlignment": "LEFT",
+      "id": "imageUrl",
+      "index": 8,
+      "isCellEditable": false,
+      "isCellVisible": true,
+      "isDerived": false,
+      "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
+      "isVisible": true,
+      "label": "image",
+      "notation": "standard",
+      "originalId": "imageUrl",
+      "sticky": "",
+      "textColor": "",
+      "textSize": "0.875rem",
+      "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
       "width": 150
@@ -396,40 +565,6 @@
       "label": "isActive",
       "notation": "standard",
       "originalId": "isActive",
-      "sticky": "",
-      "textColor": "",
-      "textSize": "0.875rem",
-      "thousandSeparator": true,
-      "validation": {},
-      "verticalAlignment": "CENTER",
-      "width": 150
-    },
-    "packageImg": {
-      "alias": "packageImg",
-      "allowCellWrapping": false,
-      "allowSameOptionsInNewRow": true,
-      "cellBackground": "",
-      "columnType": "text",
-      "computedValue": "{{tbl_tippingPackages.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"packageImg\"]))}}",
-      "currencyCode": "USD",
-      "decimals": 0,
-      "enableFilter": true,
-      "enableSort": true,
-      "fontStyle": "",
-      "horizontalAlignment": "LEFT",
-      "id": "packageImg",
-      "index": 1,
-      "isCellEditable": true,
-      "isCellVisible": true,
-      "isDerived": false,
-      "isDisabled": false,
-      "isDiscardVisible": true,
-      "isEditable": true,
-      "isSaveVisible": true,
-      "isVisible": true,
-      "label": "packageImg",
-      "notation": "standard",
-      "originalId": "packageImg",
       "sticky": "",
       "textColor": "",
       "textSize": "0.875rem",
@@ -509,7 +644,7 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 56,
+  "rightColumn": 64,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "showInlineEditingOptionDropdown": true,
