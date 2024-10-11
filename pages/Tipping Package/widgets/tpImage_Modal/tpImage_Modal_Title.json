@@ -8,10 +8,10 @@
       "key": "truncateButtonColor"
     },
     {
-      "key": "borderRadius"
+      "key": "fontFamily"
     },
     {
-      "key": "fontFamily"
+      "key": "borderRadius"
     }
   ],
   "dynamicHeight": "AUTO_HEIGHT",
@@ -20,41 +20,45 @@
   "fontSize": "1.25rem",
   "fontStyle": "BOLD",
   "hideCard": false,
-  "iconSVG": "/static/media/icon.c3b6033f570046f8c6288d911333a827.svg",
+  "iconSVG": "/static/media/icon.a55b701a2ae86aa2c6718ecb7b4083f0.svg",
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "key": "ph5glqkph7",
-  "leftColumn": 1,
+  "key": "xm33535fzw",
+  "leftColumn": 0,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 450,
   "mobileBottomRow": 5,
-  "mobileLeftColumn": 14,
-  "mobileRightColumn": 30,
+  "mobileLeftColumn": 1,
+  "mobileRightColumn": 41,
   "mobileTopRow": 1,
-  "originalBottomRow": 4,
+  "needsErrorInfo": false,
+  "originalBottomRow": 6,
   "originalTopRow": 0,
   "overflow": "NONE",
-  "parentColumnSpace": 6.42333984375,
-  "parentId": "0",
-  "parentRowSpace": 10,
+  "parentId": "9o2fx6ycq2",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 22,
+  "rightColumn": 49,
   "searchTags": [
     "typography",
     "paragraph",
     "label"
   ],
   "shouldTruncate": false,
-  "text": "Tipping Packages",
+  "tags": [
+    "Suggested",
+    "Content"
+  ],
+  "text": "Upload Tipping Package Image",
   "textAlign": "LEFT",
-  "textColor": "#101828",
+  "textColor": "#231F20",
+  "thumbnailSVG": "https://appcdn.appsmith.com/static/media/thumbnail.0c129b82c9b3e4cd4920563b289659ab.svg",
   "topRow": 0,
   "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
   "type": "TEXT_WIDGET",
   "version": 1,
-  "widgetId": "s3xrf9fi96",
-  "widgetName": "txt_pageTitle"
+  "widgetId": "0dxo2s70nl",
+  "widgetName": "tpImage_Modal_Title"
 }
